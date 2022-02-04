@@ -343,16 +343,16 @@ margin-top: 50px;
 }*/
 
 .what-we-do-item-cont{
-    width: 370px;
-    height: 70px;
-    outline: 2px solid #2196F3;
-    background-position: 60px 50px;
 
+
+    outline: 2px solid #2196F3;
+ /background-position: 60px 50px;
+*/
 }
 
 .what-we-do-wrap{
     position: relative;
- /*   overflow: hidden;*/
+ overflow: visible;
 }
 
 
@@ -365,14 +365,8 @@ margin-top: 50px;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     padding-top: 27px;
     padding-bottom: 27px;
-    
-   
-
-
-
     width: 370px;
     height: 70px;
     position: absolute;
@@ -381,10 +375,7 @@ margin-top: 50px;
     color: #ffffff;
     font-weight: 600;
     background: rgba(47, 48, 58, 0.8);
- /*   background-color: #2196F3;*/
-   
-
-    transform: translateY(400%);
+    transform: translateY(320%);
 
 }
 
@@ -739,7 +730,8 @@ backdrop {
   }
   
   .backdrop.is-hidden .modal {
-    transform: rotate(-300deg) scale(0.5);
+    transform: rotate(-300deg) rotate(0) scale(0.5);
+    transition: transform 500ms;
   }
   
   .modal {
@@ -763,10 +755,18 @@ backdrop {
     position: absolute;
     top: 10px;
     right: 10px;
+  
+
+    
+
+
   }
   
   .is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    transform: translate(-50%, -50%) rotate(0) scale(1);
+    transition: transform 500ms;
+  
   }
