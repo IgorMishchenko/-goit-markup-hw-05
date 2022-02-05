@@ -78,7 +78,7 @@ margin-left: 50px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #2196F3;
-  
+    transition: color 300ms linear;
 }
 
 .header-nav-link{
@@ -91,6 +91,7 @@ margin-left: 50px;
     letter-spacing: 0.02em;
 
     color: #212121;
+    transition: color 300ms linear;
   }
 
 .header-contact-item + .header-contact-item{
@@ -123,6 +124,7 @@ letter-spacing: 0.02em;
 text-decoration: none;
 color: #757575;
 
+transition: color 300ms linear;
 }
 
 
@@ -186,6 +188,7 @@ height: 50px;
 display: block;
 margin: 0 auto;
 margin-top: 50px;
+transition: color 300ms linear, background-color 300ms linear;
 
 }
 
@@ -415,6 +418,7 @@ margin-top: 50px;
 
 .our-team-item{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: color 300ms linear;
 }
 
 
@@ -481,7 +485,7 @@ margin-top: 50px;
       align-items:center;
       justify-content: center;
       color: #AFB1B8;
-    
+      transition: color 300ms linear;
   }
   
   .our-team-social-link-icon{
@@ -556,6 +560,7 @@ margin-top: 50px;
  /*   outline: 2px solid #AFB1B8;*/
  border: 1px solid #AFB1B8;
     fill: #AFB1B8;
+    transition: color 300ms linear;
 }
 
 
@@ -705,6 +710,7 @@ color: #FFFFFF;
     fill: #FFFFFF;
     color:  #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: color 300ms linear;
   
 }
 
@@ -720,7 +726,7 @@ color: #FFFFFF;
 
 /**ModalWindows**/
 
-backdrop {
+.backdrop {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.267);
@@ -730,10 +736,7 @@ backdrop {
   }
   
   .backdrop.is-hidden .modal {
-    transform: rotate(-300deg) rotate(0) scale(0.5);
-    transition: transform 500ms;
-
-    
+    transform: rotate(-300deg) scale(0.5);
   }
   
   .modal {
@@ -757,17 +760,10 @@ backdrop {
     position: absolute;
     top: 10px;
     right: 10px;
- 
-
-
   }
   
   .is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
- 
-  
- 
-
   }
